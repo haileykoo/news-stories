@@ -17,21 +17,32 @@ h2 {
   font-family: "Montserrat";
 }
 
+/* 
+h1, h2 {
+  font-family: "Montserrat";
+}
+ */
+
 .stories {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
+  /* grid -> transition -> responsive websites */
 }
 
 .news {
   background-color: white;
   display: inline; 
-  overflow: hidden;
+  overflow: hidden; 
+  /* to prevent content go outside of the box */
   /* max-width: 30em; - remove size*/
   margin: 1em 0;
   box-shadow: 2px 2px rgba(0, 0, 0, 4);
+  /* box-shadow: 1em(lefr, right/ nagative value - left side shadow) 1em(up, down) 0(how blurry it is) rgba(0, 0, 0, 0.5 (ocupacy); */
+  border: 0.25em solid black;
   border-radius: 0.5rem;
+  text-align: left; 
 }
 
 .one {
@@ -55,26 +66,51 @@ h2 {
 
 .news-text {
   text-align: left;
-  padding: 0 1em;
+  /* padding: 0 1em; */
+  padding: 0 1rem;
+  /* rem: % of defaul 
+      em: % of current font size */
 }
 
 .button {
+  display: block;
   color: white;
   background-color: white;
-  width:100%;
+  /* width:100%; 
+  diplay:block - width no need to be set*/
   text-align: center;
-  margin: 0 0 1em 0;
-  padding: 0.3rem;
+  margin: 1em 0;
+  padding: 1em;
+  text-transform: uppercase;
+  font: 0.8em;
+  text-decoration: none;
   border: 1px solid rgb(16, 19, 206);
+  box-shadow: 0.25em 0.25em 0 slateblue;
+  text-shadow: 1px 1px 0 black;
 }
 
+.button:hover {
+  background-color: bisque;
+  box-shadow: 0.25em 0.25em 0 brown; 
+}
+
+/* pagination */
+/* grid/ inline-block, flex can be used */
 ul {
   list-style: none;
 }
 
-li {
+/* li {
   display: inline;
+} 
+Dont use this - too general
+*/
+
+.pagination li {
+  display: inline-block;
 }
+/* or give classes to each list item
+li class="page" to every items */
 
 .pagination {
   text-align: center;
