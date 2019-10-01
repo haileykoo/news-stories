@@ -19,16 +19,33 @@ h2 {
 
 .stories {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
+
 .news {
   background-color: white;
-  /* display: inline-block;  */
+  display: inline; 
   overflow: hidden;
-  max-width: 30em;
+  /* max-width: 30em; - remove size*/
   margin: 1em 0;
   box-shadow: 2px 2px rgba(0, 0, 0, 4);
   border-radius: 0.5rem;
 }
+
+.one {
+  background-color: aliceblue;
+}
+
+.two {
+  background-color: antiquewhite;
+}
+
+.three {
+  background-color: beige;
+}
+
 .news-lead {
   text-align: center;
 }
