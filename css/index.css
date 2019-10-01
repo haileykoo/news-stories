@@ -22,7 +22,7 @@ h2 {
 }
 .news {
   background-color: white;
-  display: inline-block;
+  /* display: inline-block;  */
   overflow: hidden;
   max-width: 30em;
   margin: 1em 0;
@@ -68,3 +68,10 @@ li {
   font-weight: 500;
 }
 
+.pagination a {
+  color: aqua;
+}
+
+.current-page a {
+  color: blue;
+}
