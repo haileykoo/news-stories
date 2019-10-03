@@ -25,27 +25,56 @@ h1, h2 {
 
 .stories {
   text-align: center;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 1rem; */
   /* grid -> transition -> responsive websites */
+}
+
+@media screen and (min-width: 40em) {
+	.stories { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem; 
+  }
+}
+
+@media screen and (min-width: 80em) {
+	.stories { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem; 
+  }
+}
+
+@media screen and (min-width: 90em) {
+	body { 
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 110em) {
+	.stories { 
+    max-width: 70%;
+    margin: auto;
+  }
 }
 
 .news {
   background-color: white;
-  display: inline; 
+  display: inline-block; 
   overflow: hidden; 
   /* to prevent content go outside of the box */
   /* max-width: 30em; - remove size*/
   margin: 1em 0;
-  box-shadow: 2px 2px rgba(0, 0, 0, 4);
+  box-shadow: 1px 1px rgba(0, 0, 0, 4);
   /* box-shadow: 1em(lefr, right/ nagative value - left side shadow) 1em(up, down) 0(how blurry it is) rgba(0, 0, 0, 0.5 (ocupacy); */
-  border: 0.25em solid black;
+  border: 0.15em solid black;
   border-radius: 0.5rem;
   text-align: left; 
 }
 
-.one {
+/* .one {
   background-color: aliceblue;
 }
 
@@ -55,7 +84,7 @@ h1, h2 {
 
 .three {
   background-color: beige;
-}
+} */
 
 .news-lead {
   text-align: center;
